@@ -14,7 +14,7 @@ double* F_vector(double** a, double* b, double* solutions, int size) {
 double norm(double* f, int n){
     double norma = std::abs(f[0]);
     for (int i = 0; i < n; i++) {
-        norma = std::fmax(f[i], std::abs(norma));
+        norma = std::fmax(abs(f[i]), std::abs(norma));
     }
     return norma;
 }
